@@ -1,0 +1,125 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+body
+{
+	background-image: url(crepuscule.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    
+}
+#op{
+	 position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.17);
+     z-index: 199;
+
+}
+#connection
+{
+	width: 350px;
+	height: 350px;
+	margin: auto;
+	background-color: #fff;
+	margin-top: 10%;
+	box-sizing: border-box;
+	padding: 3%;
+	padding-top: 1%;
+	background-color: rgba(247, 247, 247, 0.3);
+}
+form
+{
+	width: 100%;
+}
+#connection form input
+{
+	width: 100%;
+}
+#c1 h3
+{
+	font-size: 20px;
+	text-align: center;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+
+}
+#c2
+{
+	margin-bottom: 10%;
+}
+#c2 p
+{
+margin-bottom: 0;
+}
+a 
+{
+	text-decoration: none;
+}
+#c3, #c6
+{
+	margin-bottom: 2%;
+	height: 30px;
+	width: 97%;
+}
+#c4
+{
+	margin-top: 5%;
+	height: 35px;
+}
+#connection form #c3 input, #connection form #c4 input, #connection form #c6 input
+{
+	height: 100%;
+    outline: none;
+    border: 1px inset #3bd6b2;
+}
+#connection form #c3 input, #connection form #c6 input
+{
+	padding-left: 2%;
+    background-color: white;
+    border-radius: 20px;
+
+}
+ #connection form #c4 input
+ {
+ 	background-color: rgba(44, 214, 159, 0.43);
+    color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+
+footer
+{
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial;
+	line-height: 30px;
+	z-index: 100;
+}
+footer span
+{
+	margin-left: 0.5%;
+}
+
+@media all and (max-width: 800px){
+
+#op{
+	background-image: url(crepuscule.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%; 
+}
+}

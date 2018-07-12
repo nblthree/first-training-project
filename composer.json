@@ -1,0 +1,13 @@
+{
+	"autoload": {
+		"psr-4": {"websocket\\": "./"}
+	},
+    "require": {
+        "cboden/ratchet": "^0.4",
+        "phpmailer/phpmailer": "^6.0",
+		"league/oauth2-client": "^2.3",
+		"psr/log": "^1.0",
+		"stevenmaguire/oauth2-microsoft": "^2.2",
+		"amphp/amp": "^2.0"
+    }
+}

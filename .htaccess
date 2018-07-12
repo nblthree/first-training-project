@@ -1,0 +1,30 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^/?$ index.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?(.*)?$ profile?pseudo=$1&page=$2 [L,QSA]
+
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php
+RewriteRule ^index\.php$ / [L,R=301]
+
+
+
+
+
+
+#RewriteRule ^(.*)$ profile?pseudo=$1 [L,QSA]
+# Run Php without filename extension
+#RewriteEngine on
+# Return 404 if original request is .php
+#RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+#RewriteRule .* - [L,R=404]

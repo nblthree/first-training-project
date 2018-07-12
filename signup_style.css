@@ -1,0 +1,176 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+}
+body
+{
+	background-image: url(123.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+#si
+{
+	height: 450px;
+	width: 500px;
+	position: absolute;
+	margin: auto;
+}
+#signup{
+  /*background: inherit;*/
+  background: rgba(119, 228, 122, 0.3215686274509804);
+  width: 500px;
+  height: 450px;
+  margin: 10% auto;
+  z-index: 10;
+  overflow: hidden;
+  padding: 3%;
+  padding-top: 1%;
+}
+#signup::before{
+  content: "";
+  width: 500px;
+  height: 500px;
+  background: inherit; 
+  position: absolute;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+  filter: blur(5px);
+}
+#form
+{
+	width: 70%;
+	margin:auto;
+}
+#signup #form input, button
+{
+	width: 100%;
+}
+#s1 h3, label
+{
+	font-size: 20px;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    
+}
+#s1
+{
+	text-align: center;
+	width: 100%;
+	padding: 0;
+} 
+a 
+{
+	text-decoration: none;
+}
+#s2
+{
+	margin-bottom: 2%;
+	height: 30px;
+	width: 97%;
+}
+#s4
+{
+	margin-top: 5%;
+	height: 35px;
+}
+#signup #form #s2 input, #signup #form #s4 button
+{
+	height: 100%;
+    border: 1px inset #4dcab3;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0px 0px 13px 0px #cfe8e5;
+}
+#signup #form #s2 input
+{
+	padding-left: 2%;
+
+}
+ #signup #form #s4 button
+ {
+ 	background-color: rgba(203, 226, 221, 0.22);
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+footer
+{
+	width: 100%;
+	height: 30px;
+    background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial;
+	line-height: 30px;
+}
+footer span
+{
+	margin-left: 0.5%;
+}
+
+
+
+select
+{
+	min-width: 70px;
+}
+.select-style1 select:focus, .select-style2 #country:focus {
+    outline: none;
+}
+
+input:focus {
+	border-color: rgba(82, 168, 236, 0.75);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+#country
+{
+	width: 52%;
+	margin-top: 5px;
+}
+#tooltip1, #tooltip2, #tooltip3, .e
+{
+	height: 15px;
+	width: 99.5%;
+	line-height: 15px;
+	text-align: center;
+	margin-bottom: 5px;
+	color: red;
+	font-size: 14px;
+}
+
+@media all and (max-width: 800px){
+#si
+{
+	width: 80%;
+	padding: 0;
+}
+#signup{
+	background-image: none;
+  width: 80%;
+  padding: 0;
+}
+#signup::before{
+  width: 80%;
+  padding: 0;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(30px);
+}
+}
+
+#op{
+	background-image: url(123.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
