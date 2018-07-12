@@ -1,7 +1,7 @@
 <?php
 /*
 Change 192.168.1.113 on line 63 & 69 to the domaine name or the IPv4 address or to localhost
-
+Change line 53 & 54 by putting your email and password
 */
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -50,8 +50,8 @@ try {
 
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                               
-    $mail->Username = 'boardcoporation@gmail.com';                
-    $mail->Password = 'mahou-bitch';                          
+    $mail->Username = 'address';                
+    $mail->Password = 'password';                          
     $mail->SMTPSecure = 'tls';                            
     $mail->Port = 587;                                    
 
