@@ -2,7 +2,7 @@
 
 /*
 Change 192.168.1.113 on line 196 & 202 to the domaine name or the IPv4 address or to localhost
-
+Change line 186 & 187 by putting your email and password
 */
 
 
@@ -183,8 +183,8 @@ try {
 
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                               
-    $mail->Username = 'boardcoporation@gmail.com';                
-    $mail->Password = 'mahou-bitch';                          
+    $mail->Username = 'address';                
+    $mail->Password = 'password';                          
     $mail->SMTPSecure = 'tls';                            
     $mail->Port = 587;                                    
 
