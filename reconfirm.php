@@ -1,6 +1,6 @@
 <?php
 /*
-Change 192.168.1.113 on line 63 & 69 to the domaine name or the IPv4 address or to localhost
+
 Change line 53 & 54 by putting your email and password
 */
 use PHPMailer\PHPMailer\PHPMailer;
@@ -18,7 +18,7 @@ catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
 }
-
+$url = implode('',array_slice(explode('/', $_SERVER['HTTP_REFERER']),1,2));
 
 if(isset($_POST['pseudo'])){
 	$p = htmlspecialchars($_POST['pseudo']);
@@ -60,13 +60,13 @@ try {
     $mail->isHTML(true);
 
     $bodyContent = "<h1 style='text-align:center;'>Welcome, $pseudo</h1>";
-    $bodyContent .= "<p>Click in the following link to confirm your inscription http://192.168.1.113/confirmation.php?token=$code&ps=$pseudo</p>";
+    $bodyContent .= "<p>Click in the following link to confirm your inscription http://".$url."/confirmation.php?token=$code&ps=$pseudo</p>";
     $mail->Subject = 'Confirmation Email From Board';
     $mail->Body    = $bodyContent;
 
                           
 
-    $mail->AltBody = 'Go to the following link to confirm your inscription http://192.168.1.113/confirmation.php?token=$code&ps=$pseudo';
+    $mail->AltBody = "Go to the following link to confirm your inscription http://".$url."/confirmation.php?token=$code&ps=$pseudo";
 
     $mail->send();
 
