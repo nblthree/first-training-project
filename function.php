@@ -207,7 +207,7 @@ try {
 
 } catch (Exception $e) {
 	$ip5 = "An Error had Occured. Please Retry.";
-    
+	echo $ip1.",".$ip2.",".$ip3.",".$ip4.",".$ip5;
 }
 } 
 else{
