@@ -170,7 +170,7 @@ $req->execute(array(
 $mail = new PHPMailer(true);                              
 try {
     
-    $mail->SMTPDebug = 2;                                 
+    $mail->SMTPDebug = 0;                                 
     $mail->isSMTP();
 
     $mail->SMTPOptions = array(
